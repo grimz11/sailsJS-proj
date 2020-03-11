@@ -28,7 +28,7 @@ describe("The PostController", function() {
   //     });
   // });
 
-  it("should get 3 posts", function(done) {
+  it("should display 3 posts", function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
       .get("/posts")
