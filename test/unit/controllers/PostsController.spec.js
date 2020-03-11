@@ -49,7 +49,7 @@ describe("The PostController", function() {
   it("should delete post created", function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .delete("/post/" + createdPostId)
+      .delete(`/post/${createdPostId}`)
       .set("Accept", "application/json")
       .expect("Content-Type", "text/html; charset=utf-8")
       .expect(200)
