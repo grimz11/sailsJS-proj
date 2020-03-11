@@ -1,12 +1,12 @@
 module.exports = {
   attributes: {
     title: {
-      type: 'string',
+      type: "string",
       required: true
     },
     body: {
-      type: 'string',
+      type: "string",
       required: true
     }
   }
-}
+};
