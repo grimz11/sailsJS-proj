@@ -20,6 +20,7 @@ module.exports = {
   create: async (req, res) => {
     const title = req.body.title;
     const body = req.body.body;
+    res.set({'Content-Type': 'json',})
     try {
       await Post.create({ title, body });
       sails.log.info("Successfully created");
