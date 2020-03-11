@@ -11,13 +11,8 @@ before(function(done) {
     hooks: { grunt: false },
     log: { level: 'warn' },
     models: {
-      connection: 'unitTestConnection',
+      connection: 'sailsDisk',
       migrate: 'drop'
-    },
-    connections: {
-      unitTestConnection: {
-        adapter: 'sails-disk'
-      }
     }
   }, function(err) {
     if (err) { return done(err); }
