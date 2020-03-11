@@ -10,16 +10,15 @@ before(function(done) {
   sails.lift({
     hooks: { grunt: false },
     log: { level: 'warn' },
-    // models: {
-    //   connection: 'unitTestConnection',
-    //   migrate: 'drop'
-    // },
-    // connections: {
-    //   unitTestConnection: {
-    //     adapter: 'sails-mysql',
-    //     url: 'mysql://admin:Hello101!@localhost:3306/sails'
-    //   }
-    // }
+    models: {
+      connection: 'unitTestConnection',
+      migrate: 'drop'
+    },
+    connections: {
+      unitTestConnection: {
+        adapter: 'sails-disk'
+      }
+    }
   }, function(err) {
     if (err) { return done(err); }
 

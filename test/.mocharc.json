@@ -1,0 +1,7 @@
+{
+  "require": "chai",
+  "reporter": "spec",
+  "global": "- sails",
+  "ui": "bdd",
+  "slow": "7s"
+}
