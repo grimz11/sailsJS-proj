@@ -1,8 +1,5 @@
-// Here is were we init our 'sails' environment and application
 var supertest = require("supertest");
 
-
-// Here we have our tests
 describe("The PostController", function() {
   var createdPostId = 1;
 
@@ -25,7 +22,7 @@ describe("The PostController", function() {
       });
   });
 
-  it("should display 3 posts", function(done) {
+  it("should display all posts", function(done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
       .get("/posts")
@@ -42,7 +39,8 @@ describe("The PostController", function() {
             res.body[0].should.have.property("id");
             res.body[0].should.have.property("title");
             res.body[0].should.have.property("body");
-          })
+          });
+          console.log(result.body);
           done();
         }
       });
