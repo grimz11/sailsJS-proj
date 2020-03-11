@@ -1,8 +1,6 @@
-/* global PostService */
-
 // Here is were we init our 'sails' environment and application
 var supertest = require("supertest");
-// require("../../../config/bootstrap");
+
 
 // Here we have our tests
 describe("The PostController", function() {
