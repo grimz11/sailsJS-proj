@@ -18,7 +18,16 @@ before(function(done) {
     // and disable all logs except errors and warnings:
     hooks: { grunt: false },
     log: { level: 'warn' },
-
+    models: {
+      connection: 'unitTestConnection',
+      migrate: 'drop'
+    },
+    connections: {
+      unitTestConnection: {
+        adapter: 'sails-mysql',
+        url: 'mysql://admin:Hello101!@localhost:3306/sails'
+      }
+    }
   }, function(err) {
     if (err) { return done(err); }
 
