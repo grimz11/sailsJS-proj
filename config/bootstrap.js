@@ -10,7 +10,6 @@
  */
 
 module.exports.bootstrap = async function() {
-
   // By convention, this is a good place to set up fake data during development.
   //
   // For example:
@@ -26,5 +25,4 @@ module.exports.bootstrap = async function() {
   //   // etc.
   // ]);
   // ```
-
 };
