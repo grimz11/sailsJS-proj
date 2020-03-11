@@ -8,17 +8,21 @@ module.exports = {
     }
   },
   findByID: async (req,res) => {
-    const id = req.param('postId')
-    const post = await Post.find({id})
-    sails.log.warn(post)
-    res.send(post)
+    try {
+      const id = req.param('postId')
+      const post = await Post.find({id})
+      sails.log.warn(post)
+      res.send(post)
+    }catch(err){
+      res.serverError(err.toString())
+    }
   },
   create: async (req, res) => {
     const title = req.body.title
     const body = req.body.body
     try {
       await Post.create({title, body})
-      sails.log.warn("Successfully created")
+      sails.log.info("Successfully created")
       return res.redirect('/')
     } catch(err) {
       res.serverError(err.toString())
