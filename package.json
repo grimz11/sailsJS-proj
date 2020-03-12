@@ -10,7 +10,6 @@
     "@sailshq/socket.io-redis": "^5.2.0",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
-    "gh-pages": "^2.2.0",
     "grunt": "1.0.4",
     "sails": "^1.2.3",
     "sails-hook-grunt": "^4.0.0",
@@ -32,11 +31,9 @@
     "build": "set NODE_ENV=production && node app.js",
     "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
     "custom-tests": "echo \"(No other custom tests yet.)\" && echo",
-    "test": "mocha test",
-    "deploy": "gh-pages"
+    "test": "mocha test"
   },
   "main": "app.js",
-  "homepages": "https://github.com/grimz11/sailsJS-proj",
   "repository": {
     "type": "git",
     "url": "git://github.com/anonymous node/sails user/sails-crud.git"
