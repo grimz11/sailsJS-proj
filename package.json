@@ -16,7 +16,7 @@
     "sails-hook-morgan": "^1.0.5",
     "sails-hook-orm": "^2.1.1",
     "sails-hook-sockets": "^2.0.0",
-    "sails-mysql": "1.0.1"
+    "sails-mysql": "3.0.0"
   },
   "devDependencies": {
     "bower": "^1.8.8",
