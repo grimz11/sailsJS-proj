@@ -23,7 +23,7 @@
     "chai": "^4.2.0",
     "eslint": "5.16.0",
     "istanbul": "^0.4.5",
-    "mocha": "^7.1.0",
+    "mocha": "^10.2.0",
     "supertest": "^4.0.2"
   },
   "scripts": {
